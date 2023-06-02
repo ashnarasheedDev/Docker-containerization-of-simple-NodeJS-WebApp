@@ -2,13 +2,13 @@
 
 Containerizing a Node.js web app offers benefits such as portability, scalability, isolation, and simplified deployment. It aligns well with modern DevOps practices and enables efficient application development, testing, and deployment workflows.
 
-<b>Create an Image Using the Dockefile</b>
+><b>Create an Image Using the Dockefile</b>
 
 ```
 $ docker image build -t nodejs:1 .
 ```
 
-<b> Create a container using above image</b>
+><b> Create a container using above image</b>
 
 ```
 $ docker container run --name nodeapp1 --restart always -d -p 9090:9090 nodejs:1
